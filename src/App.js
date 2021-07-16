@@ -46,7 +46,8 @@ function App({ user }) {
           <nav>
             <Link to="/">Home </Link>
             <Link to="/help">About</Link>
-            {!isLoggedIn && <Link to="/signin">Order</Link>}
+            <Link to="/logout"> Order</Link>
+            {/* {!isLoggedIn && <Link to="/signin">Order</Link>}
             {isLoggedIn && user.role === 1 && (
               <Link to="/new-class">New Class</Link>
             )}
@@ -54,7 +55,7 @@ function App({ user }) {
               <Link to="/signin" onClick={() => userLogout()}>
                 Log Out
               </Link>
-            )}
+            )} */}
           </nav>
         </div>
         <Switch>
